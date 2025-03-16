@@ -35,7 +35,8 @@ riskDashboard.appendChild(riskCard);
 const resolveButton = riskCard.querySelector('.resolveButton');
 resolveButton.addEventListener('click', function() {
 riskDashboard.removeChild(riskCard);
-
+//task 6: prevent bubbling
+event.stopPropagation(); 
   });
 
 //task 5:
@@ -85,3 +86,4 @@ addRiskItem("HR Compliance Issue", "Low", "Human Resources");
 //Task 5: Implementing Bulk Updates
 //test case:
 addRiskItem("Employee Retention", "Low", "HR");
+
