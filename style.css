@@ -11,15 +11,17 @@
         }
         #riskDashboard {
             margin-top: 30px;
+            display: flex;
+            flex-direction: column; 
             
         }
         .metric-card {
+            display: flex;
             padding: 20px;
             background-color: #ecf0f1;
             border-radius: 8px;
             border: 1px solid #ddd;
             width: 250px;
-            text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
@@ -41,6 +43,16 @@
                 border: 1px solid #ddd;
                 width: 250px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #increaseRiskButton {
+        font-size: 16px;           
+        padding: 15px;
+        border-radius: 10px; 
+        background-color: white;
+        color: red; 
+
+        
         }
         
     

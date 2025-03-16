@@ -1,7 +1,5 @@
 // Task 2: Adding Risk Items Dynamically
-
-
-const riskDashboard = document.getElementById("riskDashboard");
+const riskDashboard = document.getElementById('riskDashboard');
 
 // creating a function to add risk items
 function addRiskItem(riskName, riskLevel, department) {
@@ -30,6 +28,7 @@ riskCard.innerHTML = `
     `;
 
 riskDashboard.appendChild(riskCard);
+
 
 //task 3:
 const resolveButton = riskCard.querySelector('.resolveButton');
