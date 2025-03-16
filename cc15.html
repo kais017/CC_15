@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Business Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        .metric-card {
+            padding: 10px;
+            margin: 10px;
+            background-color: lightgray;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .product-item {
+            cursor: pointer;
+            color: blue;
+        }
+        .customer-card {
+            padding: 10px;
+            margin: 5px;
+            background-color: lightblue;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #dashboard, #inventoryList, #customerSection {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Risk Management Dashboard</h1>
+
+    <!-- Dashboard Metrics Section -->
+    <div id="riskDashboard"></div>
+
+    <!-- input form section -->
+     <form>
+        <label for="riskitem"> Risk Item:</label><br>
+        <input type="text" id="riskitem" name="riskItem">
+
+    <!-- button -->
+    <button type= "button" id="submitButton">submit</button>
+
+     </form>
+
+     
+    <!-- Link to JavaScript File -->
+    <script src="cc15.js"></script>
+
+</body>
+</html>
