@@ -28,15 +28,6 @@ riskDashboard.removeChild(riskCard);
 });
 
 
-
-document.getElementById('submitButton').addEventListener('click', () => {
-    
-    const riskName = document.getElementById('riskName').value;
-    const riskLevel = document.getElementById('riskLevel').value;
-    const department = document.getElementById('department').value;
-
-});
-
 }
 
 // test cases
@@ -47,3 +38,8 @@ document.getElementById('submitButton').addEventListener('click', () => {
 // Task 3: Removing Risk Items
 // test case
 addRiskItem("Market Fluctuations", "High", "Finance");
+
+//Task 4: Categorizing Risks by Level
+//test cases:
+addRiskItem("Cybersecurity Threat", "High", "IT");
+addRiskItem("HR Compliance Issue", "Low", "Human Resources");
