@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Business Dashboard</title>
     
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -19,7 +19,19 @@
      <form id="riskForm">
         <label for="riskitem"> Risk Item:</label><br>
         <input type="text" id="riskitem" name="riskItem">
-
+        <br>
+        <br>
+        <label for="riskLevel">Risk Level:</label><br>
+        <select id="riskLevel" name="riskLevel" required>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+        <br>
+        <br>
+        <label for="department">Department:</label><br>
+        <input type="text" id="department" name="department" required><br>
+<br>
     <!-- button -->
     <button type= "button" id="submitButton">submit</button>
 
