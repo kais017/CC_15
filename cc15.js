@@ -9,7 +9,18 @@ function addRiskItem(riskName, riskLevel, department) {
     const riskCard = document.createElement('div');
     riskCard.classList.add('riskCard'); 
 
-
+// task 4:
+switch (riskLevel) {
+    case 'Low':
+        riskCard.style.backgroundColor = 'green';
+        break;
+    case 'Medium':
+        riskCard.style.backgroundColor = 'yellow';
+        break;
+    case 'High':
+        riskCard.style.backgroundColor = 'red';
+        break;
+}
 
 riskCard.innerHTML = `
         <h3>${riskName}</h3>
@@ -25,9 +36,7 @@ const resolveButton = riskCard.querySelector('.resolveButton');
 resolveButton.addEventListener('click', function() {
 riskDashboard.removeChild(riskCard);
 
-});
-
-
+  });
 }
 
 // test cases
@@ -43,3 +52,4 @@ addRiskItem("Market Fluctuations", "High", "Finance");
 //test cases:
 addRiskItem("Cybersecurity Threat", "High", "IT");
 addRiskItem("HR Compliance Issue", "Low", "Human Resources");
+
